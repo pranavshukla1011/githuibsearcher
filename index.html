@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Find Github Profile</title>
+    <style>
+        #submit{
+            border-radius: 10px;
+        }
+        .tag1{
+            background-color: #03a9f4;      
+        }
+        .tag2{
+            background-color: #00695c;
+        }
+        .tag3{
+            background-color: #757575;
+        }
+        .tag4{
+            background-color: #fb8c00 ;
+        }
+        .btn, .btn-large, .btn-small, .btn-floating, .btn-large, .btn-small, .btn-flat {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper blue-grey darken-4">
+          <a href="https://www.github.com" target="_blank" class="brand-logo center"><span class="left"><i class="fab fa-github"></i> </span>Finder</a>
+      </nav>
+
+    <div class="container" style="padding-top: 10vh;">
+        <h4 class = "center-align">Find Github Profile</h4>
+        <form action="" id = "input-form">
+            <div class="row">
+                <div class="col s12">
+                    <div class="input-field">
+                        <input type="text" id="username">
+                        <label for="userName">Enter user name...</label>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="input-field center-align">
+                        <button type="submit" class = "btn-large green darken-2
+                        " id="submit"><i class="fas fa-search left"></i> Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="row card">
+            <div class="card-content">
+                <div class="row">
+                    <div class="col xs7 s6 m4">
+                        <img src="img/bird-thumbnail.jpg" alt="profile pic" class="responsive-img">
+                        
+                    </div>
+                    <div class="col xs5 s6 m8">
+                        <div class="row">
+                            <div class="col s12">
+                                <span class="btn-small tag1">Public Repos</span>
+                                <span class="btn-small tag2">Public Gits</span>
+                                <span class="btn-small tag3">Followers</span>
+                                <span class="btn-small tag4">Following</span>
+                            </div>
+                            <div class="col s12 ">
+                                <ul class="collection">
+                                    <li class="collection-item">Organization:</li>
+                                    <li class="collection-item">Website:</li>
+                                    <li class="collection-item">Location:</li>
+                                    <li class="collection-item">Member Since:</li>
+                                </ul>
+                                <span class="center-align btn" style="">Visit Profile</span>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row card">
+            <div class="card-content">
+                <h4>Latest Repositories</h4>
+                <div class="row">
+                <div class="col s12 ">
+                    <ul class="collection">
+                        <li class="collection-item">
+                            <span class="secondary-content">
+                                <div class="btn-small tooltipped tag1" data-tooltip="Stars"> <i class="fas fa-star left"></i> 0</div>
+                                <div class="btn-small tooltipped tag2" data-tooltip="Watchers"><i class="fas fa-eye left"></i> 0</div>
+                                <div class="btn-small tooltipped tag4" data-tooltip="Forks"><i class="fas fa-code-branch left"></i> 0</div>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+<footer class="page-footer blue-grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Leaving so soon? Do checkout my other projects...</h5>
+          <a href="https://pranav-shukla.netlify.app/" class="grey-text text-lighten-4" target="_blank"><i class="fas fa-glass-cheers"></i> Click here to view</a>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/pranavshukla1011" target="_blank">Github</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/shuklapranav1011/" target="_blank">LinkedIn</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://medium.com/@shuklapranav1011" target="_blank">Medium</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2021 Pranav Shukla
+      <a class="grey-text text-lighten-4 right" href="#!"> <i class="far fa-envelope"></i> pranav.1011.shukla@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+    
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="github.js"></script>
+  <script>
+      $(document).ready(function(){
+          $('.tooltipped').tooltip();
+      });
+  </script>
+</body>
+</html>
