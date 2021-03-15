@@ -65,7 +65,7 @@ class UI{
             <ul class="collection">
         `;
         
-        repos.forEach(function(repoData){
+        repos?.forEach(function(repoData){
             content += `
             <li class="collection-item" style = "height:50px;">
             <p class="left">${repoData.name}</p>
