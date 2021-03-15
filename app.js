@@ -1,11 +1,11 @@
 
 const github = new Github;
 const ui = new UI;
-const searhUser = document.querySelector('#username');
-searhUser.addEventListener('keyup', (e)=>{
-    const userText = e.target.value;
+const searhUser = document.querySelector('#button');
+const userName = document.querySelector('#username')
+searhUser.addEventListener('click', (e)=>{
+    const userText = userName.value;
     if(userText !== ''){
-       
 
         github.getUser(userText)
         .then((data) => {
@@ -22,4 +22,6 @@ searhUser.addEventListener('keyup', (e)=>{
         //clear profile
        ui.clearProfile();
     }
+
+    e.preventDefault();
 })
